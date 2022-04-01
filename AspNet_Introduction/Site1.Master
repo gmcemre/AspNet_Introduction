@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="AspNet_Introduction.Site1" %>
+
+<%@ Register Src="~/MenuControl.ascx" TagPrefix="uc1" TagName="MenuControl" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    </form>
+
+    <uc1:MenuControl runat="server" id="MenuControl" />
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+</body>
+</html>
+
+<%--
+    <% => tag'i html sayfası içerisinde C# kodları yazacağımız anlamına gelir.Bu tag'ler arasına C# kodları gelir.
+      Bu tag'lerden sonra yanlarına bazı karakterler geliyor.
+    <%@ => direktif vermeyi sağlar.
+    <%: veya <%= string ifadeler yazacağınız anlamına gelir.
+    <%# => Veri tabanında bir kayıt ile ilgili işlem yapılacağını belirtir.
+    --%>
